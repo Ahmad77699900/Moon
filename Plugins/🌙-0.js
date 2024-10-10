@@ -8,7 +8,7 @@ const handler = async (m, { conn, text, usedPrefix: prefijo }) => {
         var moon = await prepareWAMessageMedia({ image: { url: 'https://telegra.ph/file/739ae068aea122b14a106.png' }}, { upload: conn.waUploadToServer });
         
         const interactiveMessage = {
-            body: { text: `*السلام عليكم ورحمة الله وبركاته،  @${mentionId.split('@')[0]} انا قمر بوت ديني خاص، للتعرف على المزيد اضغط اسفله :*`.trim() },
+            body: { text: `*السلام عليكم ورحمة الله وبركاته،  @${mentionId.split('@')[0]} انا رزان بوت وتساب ، للتعرف على المزيد اضغط اسفله :*`.trim() },
             footer: { text: `> *Powered by Saad - 英雄*`.trim() },  
             header: {
                 title: `> *مَا يَلْفِظُ مِنْ قَوْلٍ إِلا لَدَيْهِ رَقِيبٌ عَتِيدٌ*`,
@@ -88,6 +88,6 @@ const handler = async (m, { conn, text, usedPrefix: prefijo }) => {
 
 handler.help = ['main'];
 handler.tags = ['🌙'];
-handler.command = /^(اوامر|أوامر|الاوامر|هيلب|الأوامر|مينيو|allmenu|cmd|قمر)$/i;
+handler.command = /^(م1|ق1|ديني|هيلب|ك1|مينيو|allmenu|cmd|القسم-الديني)$/i;
 
 export default handler;
